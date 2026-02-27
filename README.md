@@ -1,17 +1,31 @@
-# Frontend (Next.js)
+# Short-Term Crypto Signal Engine — Frontend
 
-This is the product landing page for the Short-Term Crypto Signal Engine.
+A high-end product landing page built with Next.js. It communicates the system's 30-second prediction capability, professional signal stack, and skill installation flow.
 
-## Local Dev
+## Tech Stack
+- Next.js (App Router)
+- React 18
+- TypeScript
+
+## Local Development
 
 ```bash
 npm install
 npm run dev
 ```
 
+Visit `http://localhost:3000`.
+
+## Build
+
+```bash
+npm run build
+npm run start
+```
+
 ## Railway Deploy
 
-1. Set the service root to `/workspace/frontend`.
+1. Set the **service root** to `/workspace/frontend`.
 2. Build command:
 
 ```bash
@@ -24,5 +38,8 @@ npm install && npm run build
 npm run start
 ```
 
-4. Railway will inject `PORT` automatically; Next.js uses it by default.
+4. Railway provides `PORT` automatically; Next.js uses it by default.
 
+## Notes
+- This frontend is static-only and does not call the backend directly.
+- The backend API base URL is referenced inside the product copy for installation guidance.
